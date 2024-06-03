@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .primary-btn {
+      @apply px-4 py-2 text-white duration-500 rounded-lg bg-primary hover:bg-primary/80;
+    }
+}
