@@ -23,7 +23,7 @@ const MenuLinks = [
 const Navbar = () => {
   return (
     <>
-        <nav>
+        <nav className='bg-white dark:bg-black dark:text-white'>
             <div className="container py-3 md:py-2">
                 <div className="flex items-center justify-between">
                     {/* logo section */}
