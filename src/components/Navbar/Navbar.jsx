@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Logo from '../../assets/website/Logo.svg';
 import DarkMode from './DarkMode';
+import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 
 const MenuLinks = [
     {
@@ -21,9 +22,16 @@ const MenuLinks = [
 ]
 
 const Navbar = () => {
+    
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+      };
+      
   return (
     <>
-        <nav className='bg-white dark:bg-black dark:text-white'>
+        <nav className='duration-300 bg-white dark:bg-black dark:text-white'>
             <div className="container py-3 md:py-2">
                 <div className="flex items-center justify-between">
                     {/* logo section */}
@@ -54,6 +62,24 @@ const Navbar = () => {
                             <button className='primary-btn'>Get In Touch</button>
                             <DarkMode/>
                         </ul>
+                    </div>
+                    {/*mobile view*/}
+                    <div className='flex items-center gap-4 md:hidden'>
+                        <DarkMode/> 
+                        {showMenu ? (
+                            <HiMenuAlt1
+                                onClick={toggleMenu}
+                                className="transition-all cursor-pointer "
+                                size={30}
+                            />
+                        ) : (
+                        <HiMenuAlt3
+                            onClick={toggleMenu}
+                            className="transition-all cursor-pointer"
+                            size={30}
+                        />
+                        )}
+                        
                     </div>
                 </div>
             </div>
