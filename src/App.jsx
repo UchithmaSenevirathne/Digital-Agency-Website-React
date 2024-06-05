@@ -7,6 +7,7 @@ import Testimonial from './components/Testimonial/Testimonial';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import BlogComp from './components/Blogs/BlogComp';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <BrandLogo/>
       <Services/>
       <Testimonial/>
+      <BlogComp/>
     </div>
   )
 }
