@@ -43,8 +43,17 @@ const BlogComp = () => {
                     Our Blogs
                 </h1>
                 
-                
-                
+                {/* Blogs Card */}
+                <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
+                    {
+                        BlogsData.map((blog) => (
+                            <BlogCard key={blog.id} {...blog}/>
+                        ))
+                    }
+                </div>
+                <div className='text-center'>
+                    <button className='primary-btn'>View All Posts</button>
+                </div>
             </div>
         </div>
     </>
