@@ -8,6 +8,7 @@ import Testimonial from './components/Testimonial/Testimonial';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BlogComp from './components/Blogs/BlogComp';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Services/>
       <Testimonial/>
       <BlogComp/>
+      <Footer/>
     </div>
   )
 }

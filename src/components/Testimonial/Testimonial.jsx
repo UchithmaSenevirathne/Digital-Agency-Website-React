@@ -42,7 +42,7 @@ const Testimonial = () => {
             <div className='py-10 dark:text-white'>
                 <div className="container">
                      {/* testimonial section */}
-                     <div className='grid max-w-screen-xl grid-cols-1 gap-6 mx-auto'>
+                     <div data-aos="fade-up" className='grid max-w-screen-xl grid-cols-1 gap-6 mx-auto'>
                         <Slider {...settings}>
                             {
                             testimonialData.map(({ id, name, text, img }) => {

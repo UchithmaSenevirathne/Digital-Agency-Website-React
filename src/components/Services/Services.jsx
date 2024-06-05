@@ -41,6 +41,7 @@ const skillsData = [
 const Services = () => {
   return (
     <>
+        <span id="about"></span>
         <div className='py-12 bg-gray-100 dark:bg-black dark:text-white sm:grid sm:place-items-center'>
             <div className="container">
                 {/* header section */}
@@ -68,7 +69,11 @@ const Services = () => {
                     ))}
                 </div>
                 {/* button section */}
-                <div className='mt-4 text-center sm:mt-8'>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                  data-aos-offset="0"
+                  className='mt-4 text-center sm:mt-8'>
                     <button className='primary-btn'>Learn More</button>
                 </div>
             </div>
