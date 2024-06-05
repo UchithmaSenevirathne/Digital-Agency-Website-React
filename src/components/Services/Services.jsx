@@ -68,6 +68,9 @@ const Services = () => {
                     ))}
                 </div>
                 {/* button section */}
+                <div className='mt-4 text-center sm:mt-8'>
+                    <button className='primary-btn'>Learn More</button>
+                </div>
             </div>
         </div>
     </>
