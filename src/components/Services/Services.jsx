@@ -52,6 +52,21 @@ const Services = () => {
                     </p>
                 </div>
                 {/* card section */}
+                <div className='grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4'>
+                    {skillsData.map((skill) => (
+                        <div
+                            key={skill.name}
+                            data-aos="fade-up"
+                            data-aos-delay={skill.aosDelay}
+                            className="p-4 space-y-3 card sm:space-y-4">
+                            <div>{skill.icon}</div>
+                            <h1 className="text-lg font-semibold">{skill.name}</h1>
+                            <p className="text-gray-600 dark:text-gray-400">
+                            {skill.description}
+                            </p>
+                        </div>
+                    ))}
+                </div>
                 {/* button section */}
             </div>
         </div>
