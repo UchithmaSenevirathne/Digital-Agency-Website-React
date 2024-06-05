@@ -41,7 +41,7 @@ const Navbar = () => {
           >
             <img src={Logo} alt="" className="w-5" />
             <span className="text-2xl font-semibold sm:text-3xl">
-              Digital agency
+              Digital Agency
             </span>
           </a>
           {/* Desktop view Navigation */}
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <li key={id} className="py-4">
                   <a
                     href={link}
-                    className="py-2 text-lg font-medium transition-colors duration-500  hover:text-primary hover:border-b-2 hover:border-primary"
+                    className="py-2 text-lg font-medium transition-colors duration-500 hover:text-primary hover:border-b-2 hover:border-primary"
                   >
                     {name}
                   </a>
